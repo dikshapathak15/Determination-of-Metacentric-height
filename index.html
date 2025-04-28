@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Determination of metacentric height</title>
+    <title>Study of Some Processing Changes in Proteins</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .step { display: none; } /* Hide all steps by default */
+        .step.active { display: block; } /* Show only the active step */
+        #button { margin-top: 20px; padding: 10px 20px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .footer { text-align: center; }
+        img { max-width: 100%; height: auto; display: block; margin: 10px auto; }
+    </style>
 </head>
 <body>
-    <h1>Step1</h1>
-    <h2>step2</h2>
-    <h2>step3</h2>
+    <main>
+        <!-- Header Section -->
+        <div class="header" id="header">
+            <h1 id="step-title">STEP 1: Complete demonstration of setup with labelled diagram.</h1>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="footer">
+            <!-- Step 1 -->
+            <div class="step active" id="step1">
+                <img id="workingtable" src="images/Add a little bit of body text (1).png" alt="Working Table">
+                <button id="button" onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" id="step2">
+                <img id="watertank" src="images/watertank.png" alt="Water Tank">
+                <img id="pontoon" src="images/pontoon.png" alt="Pontoon">
+                <button id="button" onclick="goToNextStep('step2', 'step3', 'STEP 3:', 'Final Step - Congratulations!')">Next Step</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" id="step3">
+                <p>Congratulations, you've completed the process!</p>
+                <button id="button" onclick="alert('You have completed the steps!')">Finish</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script/step1.js"></script>
 </body>
 </html>
