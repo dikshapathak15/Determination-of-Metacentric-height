@@ -1,0 +1,105 @@
+/* Mobile devices (landscape only) */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    /* styles here */
+
+
+}
+
+
+@font-face {
+    font-family: digital;
+    src:url('../fonts/digital-7-webfont.woff2') format('woff2'),
+        url('../fonts/digital-7-webfont.woff') format('woff'),
+        url("../fonts/digital-7.ttf") format('truetype');
+  } 
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 98vmax;
+    height: 1vmax; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgb(170, 165, 121);
+    overflow: hidden;
+   
+}
+
+.main{
+    height: 45.8vmax;
+    width: 100vmax;
+    background-color: rgb(215, 150, 161);
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    border: 1px solid black;
+    background-color: F7C4B9;
+    height: 3vmax;
+    width: 100vmax; 
+    position: absolute;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+}
+
+#ins{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+#text{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+    /* padding: 1%; */
+}
+
+.footer{
+    position: absolute;
+    align-items: center;
+    top: 3vmax;
+    height: 42.8vmax;
+    width: 100%;
+    overflow: hidden;
+}
+#workingtable{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: visible;
+
+}
+
+#button{
+    position:absolute;
+    border-radius: 10%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 90%;
+    top: 90%;
+    border: none;
+    background-color: rgb(200, 123, 136);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#button:active{
+    scale: 0.9;
+    transition: all ease 0.1s;
+}
+
